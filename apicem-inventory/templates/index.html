@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<table>
+  <tr>
+    <td>Hostname</td>
+    <td>Product ID</td>
+    <td>Serial Number</td>
+    <td>Location</td>
+  </tr>
+  {% for item in table %}
+  </tr>
+    <td>{{ item['hostname'] }}</td>
+    <td>{{ item['platformId'] }}</td>
+    <td>{{ item['serialNumber'] }}</td>
+    <td>{{ item['location'] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
